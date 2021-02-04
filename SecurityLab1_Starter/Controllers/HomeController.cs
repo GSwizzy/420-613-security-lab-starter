@@ -17,6 +17,7 @@ namespace SecurityLab1_Starter.Controllers
         {
             ViewBag.Message = "Your application description page.";
 
+
             return View();
         }
 
@@ -30,6 +31,12 @@ namespace SecurityLab1_Starter.Controllers
         public ActionResult NotFound()
         {
             return View();
+        }
+
+
+        public ActionResult GenError()
+        {
+            throw new Exception();
         }
     }
 }
